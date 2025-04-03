@@ -22,7 +22,7 @@
             #endregion
 
             #region output do resultado
-            Console.Write($"Volume da caixa: {volume}");
+            Console.Write($"\nVolume da caixa: {volume.ToString("F2")}");
             Console.ReadLine();
             #endregion
         }
