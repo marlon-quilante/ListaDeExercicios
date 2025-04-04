@@ -13,20 +13,22 @@
             double imc = peso / (Math.Pow(altura, 2));
 
             if (imc < 18.5){
-                Console.WriteLine("Abaixo do peso");
+                Console.WriteLine("\nAbaixo do peso");
             }
             else if (imc >= 18.5 && imc <= 25)
             {
-                Console.WriteLine("Peso normal");
+                Console.WriteLine("\nPeso normal");
             }
             else if (imc > 25 && imc <= 30)
             {
-                Console.WriteLine("Acima do peso");
+                Console.WriteLine("\nAcima do peso");
             }
             else
             {
-                Console.WriteLine("Obeso");
+                Console.WriteLine("\nObeso");
             }
+
+            Console.ReadLine();
         }
     }
 }
