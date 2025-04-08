@@ -6,14 +6,15 @@
         {
             Console.Write("Digite um número inteiro: ");
             int numero = int.Parse(Console.ReadLine());
+            int fatorial = numero;
 
             Console.Write($"\n{numero}! = {numero}");
             for (int i = numero - 1; i > 0; i--)
             {
                 Console.Write($"x{i}");
-                numero *= i; 
+                fatorial *= i; 
             }
-            Console.Write($" = {numero}");
+            Console.Write($" = {fatorial}");
             Console.ReadLine();
         }
     }
