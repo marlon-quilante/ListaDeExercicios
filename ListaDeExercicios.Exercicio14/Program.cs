@@ -25,7 +25,7 @@
                 }
                 else
                 {
-                    if (numeroFibonacci >= 30)
+                    if (numeroFibonacci >= numero)
                     {
                         break;
                     }
@@ -36,7 +36,6 @@
                     aux[i] = numeroFibonacci;
                 }
             }
-
             Console.ReadLine();
         }
     }
