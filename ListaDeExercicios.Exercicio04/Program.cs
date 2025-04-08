@@ -9,7 +9,7 @@
 
             double tempFahrenheit = (tempCelsius * 1.8) + 32;
 
-            Console.Write($"\nTemperatura em Fahrenheit: {tempFahrenheit.ToString("F2")}");
+            Console.Write($"\nTemperatura em graus Fahrenheit: {tempFahrenheit.ToString("F2")}");
             Console.ReadLine();
         }
     }
