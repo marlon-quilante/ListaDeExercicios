@@ -12,6 +12,8 @@
 
             double imc = peso / (Math.Pow(altura, 2));
 
+            Console.WriteLine("\nIMC: " + imc.ToString("F2"));
+
             if (imc < 18.5){
                 Console.WriteLine("\nAbaixo do peso");
             }
