@@ -6,19 +6,21 @@
         //VOLUME = COMPRIMENTO * LARGURA * ALTURA
         static void Main(string[] args)
         {
+            CaixaRetangular caixa = new CaixaRetangular();
+
             #region input de dados
             Console.Write("Digite o comprimento da caixa: ");
-            decimal comprimento = Convert.ToDecimal(Console.ReadLine());
+            caixa.comprimento = Convert.ToDouble(Console.ReadLine());
 
             Console.Write("Digite a largura da caixa: ");
-            decimal largura = Convert.ToDecimal(Console.ReadLine());
+            caixa.largura = Convert.ToDouble(Console.ReadLine());
 
             Console.Write("Digite a altura da caixa: ");
-            decimal altura = Convert.ToDecimal(Console.ReadLine());
+            caixa.altura = Convert.ToDouble(Console.ReadLine());
             #endregion
 
             #region processamento
-            decimal volume = comprimento * largura * altura;
+            double volume = caixa.ObtemVolume();
             #endregion
 
             #region output do resultado

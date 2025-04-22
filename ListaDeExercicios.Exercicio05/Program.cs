@@ -4,19 +4,20 @@
     {
         static void Main(string[] args)
         {
+            Vendedor vendedor = new Vendedor();
+
             Console.Write("Digite o salário base do vendedor: ");
-            decimal salarioBase = decimal.Parse(Console.ReadLine());
+            vendedor.salarioFixo = double.Parse(Console.ReadLine());
 
             Console.Write("Digite o total de vendas do vendedor: ");
-            decimal totalVendas = decimal.Parse(Console.ReadLine());
+            vendedor.totalVendas = double.Parse(Console.ReadLine());
 
             Console.Write("Digite o percentual de comissão: ");
-            decimal percentualComissao = decimal.Parse(Console.ReadLine());
+            vendedor.percentualGanho = double.Parse(Console.ReadLine());
 
-            decimal comissao = totalVendas * (percentualComissao / 100);
-            decimal salarioFinal = salarioBase + comissao;
+            double salarioTotal = vendedor.CalcularSalario();
 
-            Console.Write($"\nSalário do vendedor: R$ {salarioFinal.ToString("F2")}");
+            Console.Write($"\nSalário do vendedor: R$ {salarioTotal.ToString("F2")}");
             Console.ReadLine();
         }
     }

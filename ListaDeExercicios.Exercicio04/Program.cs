@@ -4,12 +4,14 @@
     {
         static void Main(string[] args)
         {
+            TemperaturaCelsius tempCelsius = new TemperaturaCelsius();
+
             Console.Write("Digite a temperatura em graus Celsius: ");
-            double tempCelsius = double.Parse(Console.ReadLine());
+            tempCelsius.graus = double.Parse(Console.ReadLine());
 
-            double tempFahrenheit = (tempCelsius * 1.8) + 32;
+            double grausFahrenheit = tempCelsius.ObtemTemperaturaEmFahrenheit();
 
-            Console.Write($"\nTemperatura em graus Fahrenheit: {tempFahrenheit.ToString("F2")}");
+            Console.Write($"\nTemperatura em graus Fahrenheit: {grausFahrenheit.ToString("F2")} ºF");
             Console.ReadLine();
         }
     }
